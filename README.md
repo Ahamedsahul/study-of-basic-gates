@@ -64,15 +64,16 @@ Y= A⊕B
 
 **PROGRAM**
 ```
-module digitalelectronics(a,b,c,d,e,f,g,h);
-  input a,b;
-  output c,d,e,f,g,h;
-  assign c=a&b;
-  assign d=a|b;
-  assign e=~a;
-  assign f=a^b;
-  assign g=~(a&b);
-  assign h=~(a|b);
+module logic_gate(a,b,y1,y2,y3,y4,y5,y6,y7);
+input a,b;
+output y1,y2,y3,y4,y5,y6,y7;
+and(y1,a,b);
+or(y2,a,b);
+not(y3,a);
+nand(y4,a,b);
+nor(y5,a,b);
+xor(y6,a,b);
+xnor(y7,a,b);
 endmodule
 ```
 
@@ -82,16 +83,21 @@ Program for logic gates and verify its truth table in quartus using Verilog prog
  
 **Logic symbol & Truthtable**
 
-![Screenshot 2024-12-06 083741](https://github.com/user-attachments/assets/f62941f6-69bd-4b6a-a472-2bd7d680c2d6)
+![Screenshot 2025-01-03 104730](https://github.com/user-attachments/assets/c7aa70fb-32e8-4c62-99f7-64a4695571ab)
+
 
 
 **RTL realization Output:** 
-![Screenshot 2024-11-29 113442](https://github.com/user-attachments/assets/d8a1ef2b-311b-400f-9198-e237a70f4a02)
+
+![Screenshot 2025-01-03 104753](https://github.com/user-attachments/assets/03520f0e-4e61-45a5-a8cf-8723b5774774)
+
 
 
 
 **RTL**
-![Screenshot 2024-11-29 112747](https://github.com/user-attachments/assets/ca18c54d-cf40-4032-b8ae-9e1c6e98ab34)
+
+![Screenshot 2025-01-03 104805](https://github.com/user-attachments/assets/ea6146f3-0f84-49e8-b788-13706401c409)
+
 
 
 
